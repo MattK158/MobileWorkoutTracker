@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/workoutlistnew"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/navHistoryProfile"
+        style="@android:style/Widget.Material.Light.ImageButton"
+        android:layout_width="117dp"
+        android:layout_height="57dp"
+        android:backgroundTint="#E4E3E3"
+        android:cropToPadding="true"
+        android:forceHasOverlappingRendering="false"
+        android:foregroundTint="#FFFFFF"
+        android:scaleType="centerInside"
+        android:src="@drawable/_983490"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/navWorkoutProfile"
+        style="@android:style/Widget.Material.Light.ImageButton"
+        android:layout_width="117dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#E4E3E3"
+        android:cropToPadding="true"
+        android:forceHasOverlappingRendering="false"
+        android:foregroundTint="#FFFFFF"
+        android:scaleType="centerInside"
+        android:src="@drawable/_744822"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/navHistoryProfile"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/navProfileProfile"
+        style="@android:style/Widget.Material.Light.ImageButton"
+        android:layout_width="117dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#E4E3E3"
+        android:cropToPadding="true"
+        android:forceHasOverlappingRendering="false"
+        android:foregroundTint="#FFFFFF"
+        android:scaleType="centerInside"
+        android:src="@drawable/_995071_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintStart_toEndOf="@+id/navHistoryProfile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ListView
+        android:id="@+id/workoutListViewNew"
+        android:layout_width="379dp"
+        android:layout_height="577dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/createNewWorkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#663BB1"
+        android:text="Create new workout"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workoutListViewNew" />
+</androidx.constraintlayout.widget.ConstraintLayout>

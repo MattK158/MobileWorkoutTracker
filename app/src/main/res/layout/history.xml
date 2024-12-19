@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/histRepsDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="93dp"
+        android:text="empty"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/nextEntry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/histReps"
+        app:layout_constraintTop_toBottomOf="@+id/histSetsDisplay" />
+
+    <TextView
+        android:id="@+id/histSetsDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="21dp"
+        android:text="empty"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/histRepsDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/histSets"
+        app:layout_constraintTop_toBottomOf="@+id/histWeightDisplay" />
+
+    <TextView
+        android:id="@+id/histWeightDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="60dp"
+        android:text="empty"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/histSetsDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/histWeight"
+        app:layout_constraintTop_toBottomOf="@+id/histTypeDisplay" />
+
+    <TextView
+        android:id="@+id/histReps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="292dp"
+        android:layout_marginBottom="93dp"
+        android:text="@string/histReps"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/prevEntry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/histSets" />
+
+    <TextView
+        android:id="@+id/histSets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="298dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/histSets"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/histReps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/histWeight" />
+
+    <TextView
+        android:id="@+id/histWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="271dp"
+        android:text="@string/histWeight"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/histSets"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/histTypeDisplay" />
+
+    <TextView
+        android:id="@+id/histNameDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="137dp"
+        android:text="empty"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/histType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/histName" />
+
+    <TextView
+        android:id="@+id/histType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="157dp"
+        android:text="@string/histType"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/histTypeDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/histNameDisplay" />
+
+    <TextView
+        android:id="@+id/histName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="157dp"
+        android:text="@string/histName"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/histNameDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/historyTitle" />
+
+    <TextView
+        android:id="@+id/histTypeDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="137dp"
+        android:text="empty"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/histWeightDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/histType" />
+
+    <ImageButton
+        android:id="@+id/navWorkoutHistory"
+        style="@android:style/Widget.Material.Light.ImageButton"
+        android:layout_width="117dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#E4E3E3"
+        android:cropToPadding="true"
+        android:forceHasOverlappingRendering="false"
+        android:foregroundTint="#FFFFFF"
+        android:scaleType="centerInside"
+        android:src="@drawable/_744822"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/navHistoryProfile"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/navProfileHistory"
+        style="@android:style/Widget.Material.Light.ImageButton"
+        android:layout_width="117dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#E4E3E3"
+        android:cropToPadding="true"
+        android:forceHasOverlappingRendering="false"
+        android:foregroundTint="#FFFFFF"
+        android:scaleType="centerInside"
+        android:src="@drawable/_995071_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintStart_toEndOf="@+id/navHistoryProfile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/navHistoryHistory"
+        style="@android:style/Widget.Material.Light.ImageButton"
+        android:layout_width="117dp"
+        android:layout_height="57dp"
+        android:backgroundTint="#E4E3E3"
+        android:cropToPadding="true"
+        android:forceHasOverlappingRendering="false"
+        android:foregroundTint="#FFFFFF"
+        android:scaleType="centerInside"
+        android:src="@drawable/_983490"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/historyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="651dp"
+        android:text="@string/historyTitle"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/prevEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginBottom="45dp"
+        android:text="@string/prevEntry"
+        app:layout_constraintBottom_toTopOf="@+id/navWorkoutHistory"
+        app:layout_constraintEnd_toStartOf="@+id/nextEntry"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/histReps" />
+
+    <Button
+        android:id="@+id/nextEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="45dp"
+        android:text="@string/nextEntry"
+        app:layout_constraintBottom_toTopOf="@+id/navProfileHistory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/prevEntry"
+        app:layout_constraintTop_toBottomOf="@+id/histRepsDisplay" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
